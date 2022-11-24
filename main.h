@@ -62,6 +62,9 @@ int print_char(va_list l, flags_t *f);
 int _putchar(char c);
 int _puts(char *str);
 
+/* get_width */                                                                                                                         
+int get_width(const char *format, int *i, va_list list);
+
 /* print_custom */
 int print_rot13(va_list l, flags_t *f);
 int print_rev(va_list l, flags_t *f);
@@ -72,8 +75,5 @@ int print_address(va_list l, flags_t *f);
 
 /* print_percent */
 int print_percent(va_list l, flags_t *f);
-
-/* get_width */
-int get_width(const char *format, int *i, va_list list);
 
 #endif
